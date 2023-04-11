@@ -26,7 +26,7 @@ public class LoginVC: UIViewController {
     @IBOutlet weak var btnFacebook: UIButton!
     @IBOutlet weak var btnSnapChat: UIButton!
     
-    weak var delegate: LoginVCDelegate?
+    public weak var delegate: LoginVCDelegate?
     
     public override func viewDidLoad() {
         super.viewDidLoad()

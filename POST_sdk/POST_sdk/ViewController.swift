@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginVC = LoginVC()
+        let loginVC = LoginVC.instance()//LoginVC()
         loginVC.delegate = self
         self.navigationController?.pushViewController(loginVC, animated: true)
         // Do any additional setup after loading the view.
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
 extension ViewController : LoginVCDelegate{
     func loginBtnContinueClicked() {
-        let otpVC = OtpVC()
+        let otpVC = OtpVC.instance()//OtpVC()
         otpVC.delegate = self
         self.navigationController?.pushViewController(otpVC, animated: true)
     }
@@ -51,7 +51,7 @@ extension ViewController : OtpVCDelegate{
     }
     
     func otpValidate() {
-        let profileVC = ProfileVC()
+        let profileVC = ProfileVC.instance()//ProfileVC()
         profileVC.delegate = self
         self.navigationController?.pushViewController(profileVC, animated: true)
     }

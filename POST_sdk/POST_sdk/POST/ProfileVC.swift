@@ -23,18 +23,20 @@ public class ProfileVC: UIViewController {
     @IBOutlet weak var btnTermsCheck: UIButton!
 
     var arrPofile = [ProfileModel]()
-    weak var delegate: ProfileVCDelegate?
+    public weak var delegate: ProfileVCDelegate?
 
     public override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
     }
-    
+        
     func setUI(){
         
         btnContinue.setCornerRadious(corner: btnContinue.frame.height / 2)
         
-        tblProfile.register(UINib.init(nibName: "ProfileTblCell", bundle: nil), forCellReuseIdentifier: "ProfileTblCell")
+        let bundle = Bundle(for: ProfileVC.self)
+
+        tblProfile.register(UINib.init(nibName: "ProfileTblCell", bundle: bundle), forCellReuseIdentifier: "ProfileTblCell")
         
         
         arrPofile.append(ProfileModel.init(placeholder: "Auto generated signup ID", isDateField: false))

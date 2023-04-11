@@ -31,7 +31,7 @@ public class OtpVC: UIViewController {
     @IBOutlet weak var txtOTP3: UITextField!
     @IBOutlet weak var txtOTP4: UITextField!
     
-    weak var delegate: OtpVCDelegate?
+    public weak var delegate: OtpVCDelegate?
 
     
     public override func viewDidLoad() {

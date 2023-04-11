@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ProfileTblCell: UITableViewCell {
+public class ProfileTblCell: UITableViewCell {
 
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var vWRoundView: UIView!
     @IBOutlet weak var imgOptionView: UIImageView!
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
@@ -21,7 +21,7 @@ class ProfileTblCell: UITableViewCell {
         vWRoundView.setBorder(width: 1, color: UIColor.init(hexString: "DDDDDD"))
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
