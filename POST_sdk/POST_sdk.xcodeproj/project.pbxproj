@@ -152,7 +152,6 @@
 				187BD19429E2EB9D006D5A9A /* OtpVC.swift */,
 				187BD15429E2DDBC006D5A9A /* LoginVC.xib */,
 				187BD18A29E2E62A006D5A9A /* LoginVC.swift */,
-				187BD15629E2DEA5006D5A9A /* resource */,
 			);
 			path = POST;
 			sourceTree = "<group>";
@@ -214,6 +213,7 @@
 		18FD081329DFEAB900FC16E0 /* POST_sdk */ = {
 			isa = PBXGroup;
 			children = (
+				187BD15629E2DEA5006D5A9A /* resource */,
 				187BD15129E2DD3F006D5A9A /* POST */,
 				18FD081429DFEAB900FC16E0 /* AppDelegate.swift */,
 				18FD081629DFEAB900FC16E0 /* SceneDelegate.swift */,

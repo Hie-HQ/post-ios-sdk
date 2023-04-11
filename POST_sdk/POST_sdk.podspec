@@ -13,5 +13,6 @@ post sdk for easy onbaording!
   s.source           = { :git => 'https://github.com/Hie-HQ/post-ios-sdk.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '12.0'
-  s.source_files = 'POST_sdk/POST/**/*'
+  s.source_files = 'POST_sdk/POST/*.{swift}'
+  s.resources = 'POST_sdk/resource/**/*.{storyboard,xib,xcassets,json,png,ttf}' 
 end
