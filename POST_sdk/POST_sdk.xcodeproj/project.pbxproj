@@ -138,66 +138,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		185C9B4029E50625001C92EA /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				185C9B4C29E50AF8001C92EA /* Model */,
-				185C9B4529E50705001C92EA /* TableCell */,
-				185C9B4129E50635001C92EA /* ProfileVC.xib */,
-				185C9B4329E50641001C92EA /* ProfileVC.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		185C9B4529E50705001C92EA /* TableCell */ = {
-			isa = PBXGroup;
-			children = (
-				185C9B4829E50787001C92EA /* ProfileTblCell.swift */,
-				185C9B4929E50787001C92EA /* ProfileTblCell.xib */,
-			);
-			path = TableCell;
-			sourceTree = "<group>";
-		};
-		185C9B4C29E50AF8001C92EA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				185C9B4D29E50B06001C92EA /* ProfileModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		187BD15129E2DD3F006D5A9A /* POST */ = {
 			isa = PBXGroup;
 			children = (
-				187BD15629E2DEA5006D5A9A /* resource */,
-				187BD15229E2DD48006D5A9A /* onboarding */,
-			);
-			path = POST;
-			sourceTree = "<group>";
-		};
-		187BD15229E2DD48006D5A9A /* onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				185C9B4029E50625001C92EA /* Profile */,
-				187BD19129E2EB7E006D5A9A /* Otp */,
-				187BD15329E2DD7A006D5A9A /* Login */,
-			);
-			path = onboarding;
-			sourceTree = "<group>";
-		};
-		187BD15329E2DD7A006D5A9A /* Login */ = {
-			isa = PBXGroup;
-			children = (
+				187BD18F29E2E892006D5A9A /* UIColor.swift */,
+				187BD18D29E2E6FD006D5A9A /* UIView.swift */,
+				185C9B4D29E50B06001C92EA /* ProfileModel.swift */,
+				185C9B4829E50787001C92EA /* ProfileTblCell.swift */,
+				185C9B4929E50787001C92EA /* ProfileTblCell.xib */,
+				185C9B4129E50635001C92EA /* ProfileVC.xib */,
+				185C9B4329E50641001C92EA /* ProfileVC.swift */,
+				187BD19229E2EB91006D5A9A /* OtpVC.xib */,
+				187BD19429E2EB9D006D5A9A /* OtpVC.swift */,
 				187BD15429E2DDBC006D5A9A /* LoginVC.xib */,
 				187BD18A29E2E62A006D5A9A /* LoginVC.swift */,
+				187BD15629E2DEA5006D5A9A /* resource */,
 			);
-			path = Login;
+			path = POST;
 			sourceTree = "<group>";
 		};
 		187BD15629E2DEA5006D5A9A /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				187BD18C29E2E6ED006D5A9A /* custom */,
 				187BD15729E2DEB9006D5A9A /* font */,
 				187BD18829E2E460006D5A9A /* assets.xcassets */,
 			);
@@ -227,24 +189,6 @@
 				187BD17429E2E052006D5A9A /* SF-Pro-Display-Medium.ttf */,
 			);
 			path = font;
-			sourceTree = "<group>";
-		};
-		187BD18C29E2E6ED006D5A9A /* custom */ = {
-			isa = PBXGroup;
-			children = (
-				187BD18D29E2E6FD006D5A9A /* UIView.swift */,
-				187BD18F29E2E892006D5A9A /* UIColor.swift */,
-			);
-			path = custom;
-			sourceTree = "<group>";
-		};
-		187BD19129E2EB7E006D5A9A /* Otp */ = {
-			isa = PBXGroup;
-			children = (
-				187BD19229E2EB91006D5A9A /* OtpVC.xib */,
-				187BD19429E2EB9D006D5A9A /* OtpVC.swift */,
-			);
-			path = Otp;
 			sourceTree = "<group>";
 		};
 		18FD080829DFEAB900FC16E0 = {
