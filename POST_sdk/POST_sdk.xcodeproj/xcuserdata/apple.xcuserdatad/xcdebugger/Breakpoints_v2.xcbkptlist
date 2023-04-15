@@ -3,4 +3,102 @@
    uuid = "35ED204E-C99D-44B1-A952-B494661F5ADF"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E12CB027-F975-4F70-A74C-3D7FEAE39610"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POST_sdk/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "OnboardingSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E12CB027-F975-4F70-A74C-3D7FEAE39610 - f018d3175dc9ad9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POST_sdk.ViewController.OnboardingSuccess() -&gt; ()"
+                  moduleName = "POST_sdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/Projects/Post-SDK/POST_sdk/POST_sdk/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "E12CB027-F975-4F70-A74C-3D7FEAE39610 - ce14bc86f3d9a42c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 () -&gt; () in implicit closure #1 (POST_sdk.ViewController) -&gt; () -&gt; () in POST_sdk.ViewController.OnboardingSuccess() -&gt; ()"
+                  moduleName = "POST_sdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/Projects/Post-SDK/POST_sdk/POST_sdk/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1732F255-BE51-4F9D-A6A2-CB859501F109"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POST_sdk/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "OnboardingFailed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1732F255-BE51-4F9D-A6A2-CB859501F109 - f904fa6e14735784"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POST_sdk.ViewController.OnboardingFailed() -&gt; ()"
+                  moduleName = "POST_sdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/Projects/Post-SDK/POST_sdk/POST_sdk/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "1732F255-BE51-4F9D-A6A2-CB859501F109 - 19e7ca1baf1b08ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 () -&gt; () in implicit closure #1 (POST_sdk.ViewController) -&gt; () -&gt; () in POST_sdk.ViewController.OnboardingFailed() -&gt; ()"
+                  moduleName = "POST_sdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/Projects/Post-SDK/POST_sdk/POST_sdk/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

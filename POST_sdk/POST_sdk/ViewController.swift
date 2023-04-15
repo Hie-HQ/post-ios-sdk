@@ -8,67 +8,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginVC = LoginVC.instance()//LoginVC()
-        loginVC.delegate = self
-        self.navigationController?.pushViewController(loginVC, animated: true)
+        let onboarding = OnboardingVC.init(frame: self.view.bounds)
+        onboarding.openLogin(vc: self)
+        onboarding.delegate = self
+
+//        let loginVC = LoginVC.instance()
+//        loginVC.delegate = self
+//        self.navigationController?.pushViewController(loginVC, animated: true)
         // Do any additional setup after loading the view.
     }
 
-
 }
 
-extension ViewController : LoginVCDelegate{
-    func loginBtnContinueClicked() {
-        let otpVC = OtpVC.instance()//OtpVC()
-        otpVC.delegate = self
-        self.navigationController?.pushViewController(otpVC, animated: true)
-    }
-    
-    func loginBtnFacebookClicked() {
-        
-    }
-    
-    func loginBtnSnapchatClicked() {
-        
-    }
-    
-    func loginBtnGoogleClicked() {
-        
-    }
-    
-    
-}
 
-extension ViewController : OtpVCDelegate{
+extension ViewController : OnboardingVCDelegate{
     
-    func otpBackClicked() {
-        self.navigationController?.popViewController(animated: true)
+    func OnboardingSuccess() {
+        debugPrint(OnboardingSuccess)
     }
     
-    func otpValidate() {
-        let profileVC = ProfileVC.instance()//ProfileVC()
-        profileVC.delegate = self
-        self.navigationController?.pushViewController(profileVC, animated: true)
+    func OnboardingFailed() {
+        debugPrint(OnboardingFailed)
     }
-    
-}
-
-extension ViewController : ProfileVCDelegate{
-    
-    func profileBackClicked() {
-        self.navigationController?.popViewController(animated: true)
-
-    }
-    
-    func profileBtnContinueClicked() {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
-    
-    
     
 }

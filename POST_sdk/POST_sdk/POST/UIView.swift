@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-public extension UIView{
+extension UIView{
     
     func setCornerRadious(corner : CGFloat){
         self.layer.cornerRadius = corner
@@ -23,7 +23,7 @@ public extension UIView{
 }
 
 
-public extension UIViewController {
+extension UIViewController {
 
     //** loads instance from right framework bundle, not main bundle as UIViewController.init() does
     private static func genericInstance<T: UIViewController>() -> T {

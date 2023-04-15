@@ -8,15 +8,15 @@
 import Foundation
 import UIKit
 
-public protocol LoginVCDelegate : class {
-    func loginBtnContinueClicked()
-    func loginBtnFacebookClicked()
-    func loginBtnSnapchatClicked()
-    func loginBtnGoogleClicked()
+protocol LoginVCDelegate : class {
+
+    func loginSuccess()
+    func loginFailure()
 
 }
 
-public class LoginVC: UIViewController {
+class LoginVC: UIViewController {
+
     
     @IBOutlet weak var lblAppName: UILabel!
     @IBOutlet weak var btnContinue: UIButton!
@@ -26,11 +26,25 @@ public class LoginVC: UIViewController {
     @IBOutlet weak var btnFacebook: UIButton!
     @IBOutlet weak var btnSnapChat: UIButton!
     
-    public weak var delegate: LoginVCDelegate?
-    
-    public override func viewDidLoad() {
+    weak var delegate: LoginVCDelegate?
+
+    override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+                
+        NotificationCenter.default.addObserver(self, selector: #selector(SignupSuccess(notification:)), name: Notification.Name(Constants.NotificationCenterKey.KSignupSuccess), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SignupFailure(notification:)), name: Notification.Name(Constants.NotificationCenterKey.KSignupFailure), object: nil)
+
+    }
+    
+    @objc func SignupFailure(notification: NSNotification) {
+        self.navigationController?.dismiss(animated: true)
+        delegate?.loginFailure()
+    }
+    
+    @objc func SignupSuccess(notification: NSNotification) {
+        self.navigationController?.dismiss(animated: true)
+        delegate?.loginSuccess()
     }
     
     func setUI(){
@@ -47,15 +61,13 @@ public class LoginVC: UIViewController {
     }
     
     @IBAction func btnContinueClicked(_ sender: UIButton) {
-        delegate?.loginBtnContinueClicked()
+        let otpVC = OtpVC.instance()
+        self.navigationController?.pushViewController(otpVC, animated: true)
     }
     @IBAction func btnGoogleClicked(_ sender: UIButton) {
-        delegate?.loginBtnGoogleClicked()
     }
     @IBAction func btnFacebookClicked(_ sender: UIButton) {
-        delegate?.loginBtnFacebookClicked()
     }
     @IBAction func btnSnapChatClicked(_ sender: UIButton) {
-        delegate?.loginBtnSnapchatClicked()
     }
 }

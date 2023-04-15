@@ -37,6 +37,14 @@
 		187BD19029E2E892006D5A9A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD18F29E2E892006D5A9A /* UIColor.swift */; };
 		187BD19329E2EB91006D5A9A /* OtpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187BD19229E2EB91006D5A9A /* OtpVC.xib */; };
 		187BD19529E2EB9D006D5A9A /* OtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BD19429E2EB9D006D5A9A /* OtpVC.swift */; };
+		18D955B429E828FD00ED5684 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D955B329E828FD00ED5684 /* OnboardingVC.swift */; };
+		18E250DB29EA8254006637CE /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E250DA29EA8254006637CE /* Custom.swift */; };
+		18E250DD29EA8627006637CE /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E250DC29EA8627006637CE /* APIConstants.swift */; };
+		18E250DF29EA8839006637CE /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E250DE29EA8839006637CE /* APIEndpoint.swift */; };
+		18E250E129EA8AD5006637CE /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E250E029EA8AD5006637CE /* APIHandler.swift */; };
+		18E250E329EA8E40006637CE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E250E229EA8E40006637CE /* APIManager.swift */; };
+		18E250E529EA8FB2006637CE /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E250E429EA8FB2006637CE /* DBManager.swift */; };
+		18E250E729EA903F006637CE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E250E629EA903F006637CE /* HTTPClient.swift */; };
 		18FD081529DFEAB900FC16E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD081429DFEAB900FC16E0 /* AppDelegate.swift */; };
 		18FD081729DFEAB900FC16E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD081629DFEAB900FC16E0 /* SceneDelegate.swift */; };
 		18FD081929DFEAB900FC16E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD081829DFEAB900FC16E0 /* ViewController.swift */; };
@@ -97,6 +105,14 @@
 		187BD18F29E2E892006D5A9A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		187BD19229E2EB91006D5A9A /* OtpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtpVC.xib; sourceTree = "<group>"; };
 		187BD19429E2EB9D006D5A9A /* OtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpVC.swift; sourceTree = "<group>"; };
+		18D955B329E828FD00ED5684 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		18E250DA29EA8254006637CE /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		18E250DC29EA8627006637CE /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		18E250DE29EA8839006637CE /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		18E250E029EA8AD5006637CE /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		18E250E229EA8E40006637CE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		18E250E429EA8FB2006637CE /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		18E250E629EA903F006637CE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		18FD081129DFEAB900FC16E0 /* POST_sdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POST_sdk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FD081429DFEAB900FC16E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FD081629DFEAB900FC16E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,8 +157,14 @@
 		187BD15129E2DD3F006D5A9A /* POST */ = {
 			isa = PBXGroup;
 			children = (
+				187BD15629E2DEA5006D5A9A /* resource */,
 				187BD18F29E2E892006D5A9A /* UIColor.swift */,
+				18E250DA29EA8254006637CE /* Custom.swift */,
 				187BD18D29E2E6FD006D5A9A /* UIView.swift */,
+				18E250DC29EA8627006637CE /* APIConstants.swift */,
+				18E250DE29EA8839006637CE /* APIEndpoint.swift */,
+				18E250E029EA8AD5006637CE /* APIHandler.swift */,
+				18E250E229EA8E40006637CE /* APIManager.swift */,
 				185C9B4D29E50B06001C92EA /* ProfileModel.swift */,
 				185C9B4829E50787001C92EA /* ProfileTblCell.swift */,
 				185C9B4929E50787001C92EA /* ProfileTblCell.xib */,
@@ -152,6 +174,9 @@
 				187BD19429E2EB9D006D5A9A /* OtpVC.swift */,
 				187BD15429E2DDBC006D5A9A /* LoginVC.xib */,
 				187BD18A29E2E62A006D5A9A /* LoginVC.swift */,
+				18D955B329E828FD00ED5684 /* OnboardingVC.swift */,
+				18E250E429EA8FB2006637CE /* DBManager.swift */,
+				18E250E629EA903F006637CE /* HTTPClient.swift */,
 			);
 			path = POST;
 			sourceTree = "<group>";
@@ -213,7 +238,6 @@
 		18FD081329DFEAB900FC16E0 /* POST_sdk */ = {
 			isa = PBXGroup;
 			children = (
-				187BD15629E2DEA5006D5A9A /* resource */,
 				187BD15129E2DD3F006D5A9A /* POST */,
 				18FD081429DFEAB900FC16E0 /* AppDelegate.swift */,
 				18FD081629DFEAB900FC16E0 /* SceneDelegate.swift */,
@@ -399,15 +423,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FD081F29DFEAB900FC16E0 /* POST_sdk.xcdatamodeld in Sources */,
+				18D955B429E828FD00ED5684 /* OnboardingVC.swift in Sources */,
 				187BD19029E2E892006D5A9A /* UIColor.swift in Sources */,
+				18E250E129EA8AD5006637CE /* APIHandler.swift in Sources */,
+				18E250DB29EA8254006637CE /* Custom.swift in Sources */,
+				18E250DF29EA8839006637CE /* APIEndpoint.swift in Sources */,
 				185C9B4A29E50787001C92EA /* ProfileTblCell.swift in Sources */,
 				185C9B4E29E50B06001C92EA /* ProfileModel.swift in Sources */,
 				187BD19529E2EB9D006D5A9A /* OtpVC.swift in Sources */,
 				185C9B4429E50641001C92EA /* ProfileVC.swift in Sources */,
+				18E250DD29EA8627006637CE /* APIConstants.swift in Sources */,
 				18FD081929DFEAB900FC16E0 /* ViewController.swift in Sources */,
+				18E250E329EA8E40006637CE /* APIManager.swift in Sources */,
+				18E250E529EA8FB2006637CE /* DBManager.swift in Sources */,
 				18FD081529DFEAB900FC16E0 /* AppDelegate.swift in Sources */,
 				18FD081729DFEAB900FC16E0 /* SceneDelegate.swift in Sources */,
 				187BD18E29E2E6FD006D5A9A /* UIView.swift in Sources */,
+				18E250E729EA903F006637CE /* HTTPClient.swift in Sources */,
 				187BD18B29E2E62A006D5A9A /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

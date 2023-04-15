@@ -59,17 +59,27 @@
                             <rect key="frame" x="0.0" y="0.0" width="363" height="52"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cnm-gt-aeY">
-                                    <rect key="frame" x="16" y="0.0" width="331" height="52"/>
+                                    <rect key="frame" x="55" y="0.0" width="292" height="52"/>
                                     <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuG-3U-vcw">
+                                    <rect key="frame" x="16" y="0.0" width="30" height="52"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="+91">
+                                        <color key="titleColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="2Oe-Kw-YWb"/>
-                                <constraint firstItem="Cnm-gt-aeY" firstAttribute="leading" secondItem="ze7-4s-HUP" secondAttribute="leading" constant="16" id="7Sa-k3-8JO"/>
+                                <constraint firstItem="Cnm-gt-aeY" firstAttribute="leading" secondItem="ze7-4s-HUP" secondAttribute="leading" constant="55" id="7Sa-k3-8JO"/>
+                                <constraint firstAttribute="bottom" secondItem="DuG-3U-vcw" secondAttribute="bottom" id="Mb1-6j-cMc"/>
+                                <constraint firstItem="DuG-3U-vcw" firstAttribute="top" secondItem="ze7-4s-HUP" secondAttribute="top" id="Nb1-Ru-32x"/>
                                 <constraint firstAttribute="trailing" secondItem="Cnm-gt-aeY" secondAttribute="trailing" constant="16" id="VVF-66-8gT"/>
                                 <constraint firstAttribute="bottom" secondItem="Cnm-gt-aeY" secondAttribute="bottom" id="jrd-Nk-RAh"/>
+                                <constraint firstItem="DuG-3U-vcw" firstAttribute="leading" secondItem="ze7-4s-HUP" secondAttribute="leading" constant="16" id="tDL-Ka-n0n"/>
                                 <constraint firstItem="Cnm-gt-aeY" firstAttribute="top" secondItem="ze7-4s-HUP" secondAttribute="top" id="tvO-te-kAL"/>
                             </constraints>
                         </view>

@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-public protocol OtpVCDelegate : class {
+protocol OtpVCDelegate : class {
     func otpBackClicked()
     func otpValidate()
 }
 
-public class OtpVC: UIViewController {
+class OtpVC: UIViewController {
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDesc: UILabel!
@@ -31,10 +31,10 @@ public class OtpVC: UIViewController {
     @IBOutlet weak var txtOTP3: UITextField!
     @IBOutlet weak var txtOTP4: UITextField!
     
-    public weak var delegate: OtpVCDelegate?
+    weak var delegate: OtpVCDelegate?
 
     
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
     }
@@ -52,11 +52,13 @@ public class OtpVC: UIViewController {
     }
     
     @IBAction func btnBackClicked(_ sender: UIButton) {
-        delegate?.otpBackClicked()
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func btnOtpValidateClicked(_ sender: UIButton) {
-        delegate?.otpValidate()
+        let profileVC = ProfileVC.instance()
+        self.navigationController?.pushViewController(profileVC, animated: true)
     }
     
 }
+
