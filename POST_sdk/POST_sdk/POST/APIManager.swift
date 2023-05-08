@@ -40,7 +40,7 @@ class APIManager: NSObject {
                     myGroup.leave()
                 }
                 else{
-                    requestRefreshToken(with: APIEndPoints.refresh_token(refresh_token: CommonMethodsClass.getRefreshToken()), isLoaderNeeded: true) { response in
+                    requestRefreshToken(with: APIEndPoints.refresh_token(refreshToken: CommonMethodsClass.getRefreshToken()), isLoaderNeeded: true) { response in
                         myGroup.leave()
                     }
                 }
@@ -72,7 +72,7 @@ class APIManager: NSObject {
                     completion(Response.success(object))
                 }
                 else if responseType == 401{
-                    self.requestRefreshToken(with: APIEndPoints.refresh_token(refresh_token: CommonMethodsClass.getRefreshToken()), isLoaderNeeded: true) { response in
+                    self.requestRefreshToken(with: APIEndPoints.refresh_token(refreshToken: CommonMethodsClass.getRefreshToken()), isLoaderNeeded: true) { response in
                     }
                 }
                 else {
@@ -112,7 +112,7 @@ class APIManager: NSObject {
                     object = api.handle(data: response)
                     completion(Response.success(object))
                 } else if responseType == 401{
-                    self.requestRefreshToken(with: APIEndPoints.refresh_token(refresh_token: CommonMethodsClass.getRefreshToken()), isLoaderNeeded: true) { response in
+                    self.requestRefreshToken(with: APIEndPoints.refresh_token(refreshToken: CommonMethodsClass.getRefreshToken()), isLoaderNeeded: true) { response in
                     }
                 } else {
                     completion(Response.failure(json[Keys.error.rawValue].stringValue, 200))
@@ -151,7 +151,7 @@ class APIManager: NSObject {
                     object = api.handle(data: response)
                     completion(Response.success(object))
                 } else if responseType == 401{
-                    self.requestRefreshToken(with: APIEndPoints.refresh_token(refresh_token: CommonMethodsClass.getRefreshToken()), isLoaderNeeded: true) { response in
+                    self.requestRefreshToken(with: APIEndPoints.refresh_token(refreshToken: CommonMethodsClass.getRefreshToken()), isLoaderNeeded: true) { response in
                     }
                 } else {
                     completion(Response.failure(json[Keys.error.rawValue].stringValue, 200))

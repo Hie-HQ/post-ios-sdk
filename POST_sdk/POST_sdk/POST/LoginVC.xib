@@ -19,9 +19,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="POST_sdk" customModuleProvider="target">
             <connections>
                 <outlet property="btnContinue" destination="wHY-8d-fjC" id="YbR-c5-kiw"/>
+                <outlet property="btnCountryCode" destination="DuG-3U-vcw" id="XJJ-yI-vjv"/>
                 <outlet property="btnFacebook" destination="qDS-t1-nar" id="zuw-bW-YJg"/>
                 <outlet property="btnGoogle" destination="GZP-lI-jNK" id="PYW-Zi-U4y"/>
                 <outlet property="btnSnapChat" destination="vbc-4c-hbC" id="H1q-NV-ZDp"/>
+                <outlet property="imgApp" destination="oed-AZ-iRQ" id="ytc-Hu-kz4"/>
+                <outlet property="imgBackGround" destination="LO8-Hg-TJu" id="AzZ-ey-TGQ"/>
                 <outlet property="lblAppName" destination="6o4-Xm-Bo0" id="FS0-Lc-5HW"/>
                 <outlet property="txtPhoneNumber" destination="Cnm-gt-aeY" id="cgV-4O-ek6"/>
                 <outlet property="vWPhoneNumber" destination="ze7-4s-HUP" id="hd2-29-pQn"/>
@@ -33,23 +36,36 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LO8-Hg-TJu">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdO-PF-lQ2">
-                    <rect key="frame" x="0.0" y="59" width="393" height="64"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="62.666666666666657"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o4-Xm-Bo0">
-                            <rect key="frame" x="151.33333333333334" y="17.666666666666671" width="90.666666666666657" height="28.666666666666671"/>
-                            <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FcB-5w-53x">
+                            <rect key="frame" x="151.33333333333334" y="17" width="90.666666666666657" height="28.666666666666671"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o4-Xm-Bo0">
+                                    <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="28.666666666666668"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oed-AZ-iRQ">
+                                    <rect key="frame" x="20.333333333333314" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="20E-LR-gVh"/>
+                                        <constraint firstAttribute="width" constant="50" id="GpT-lh-Bqb"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="6o4-Xm-Bo0" firstAttribute="centerY" secondItem="ZdO-PF-lQ2" secondAttribute="centerY" id="4b3-fP-1mZ"/>
-                        <constraint firstItem="6o4-Xm-Bo0" firstAttribute="centerX" secondItem="ZdO-PF-lQ2" secondAttribute="centerX" id="Bla-bb-kja"/>
-                        <constraint firstAttribute="height" constant="64" id="Jyz-lh-VGn"/>
-                        <constraint firstItem="6o4-Xm-Bo0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZdO-PF-lQ2" secondAttribute="leading" constant="5" id="TcY-0z-B4z"/>
-                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6o4-Xm-Bo0" secondAttribute="trailing" constant="5" id="TfZ-6w-jVf"/>
+                        <constraint firstItem="FcB-5w-53x" firstAttribute="top" secondItem="ZdO-PF-lQ2" secondAttribute="top" constant="17" id="945-KH-9qT"/>
+                        <constraint firstAttribute="bottom" secondItem="FcB-5w-53x" secondAttribute="bottom" constant="17" id="Dmd-UB-dpZ"/>
+                        <constraint firstItem="FcB-5w-53x" firstAttribute="centerX" secondItem="ZdO-PF-lQ2" secondAttribute="centerX" id="tjX-EK-8Bt"/>
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FG0-Oe-y9b">
@@ -61,7 +77,7 @@
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cnm-gt-aeY">
                                     <rect key="frame" x="55" y="0.0" width="292" height="52"/>
                                     <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuG-3U-vcw">
                                     <rect key="frame" x="16" y="0.0" width="30" height="52"/>
@@ -187,11 +203,15 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SYJ-1W-CK7" secondAttribute="trailing" constant="40" id="EHu-p1-jco"/>
                 <constraint firstItem="ZdO-PF-lQ2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="L9l-oI-nRN"/>
                 <constraint firstItem="wHY-8d-fjC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PJG-pM-5m0"/>
+                <constraint firstItem="LO8-Hg-TJu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PJY-7l-aZd"/>
+                <constraint firstAttribute="bottom" secondItem="LO8-Hg-TJu" secondAttribute="bottom" id="RPT-sp-wN2"/>
                 <constraint firstItem="FG0-Oe-y9b" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RQe-TD-s5g"/>
                 <constraint firstItem="wHY-8d-fjC" firstAttribute="leading" secondItem="FG0-Oe-y9b" secondAttribute="leading" id="TU7-Qc-Bxn"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FG0-Oe-y9b" secondAttribute="trailing" constant="15" id="Xpj-Kl-d1d"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZdO-PF-lQ2" secondAttribute="trailing" id="abI-EG-gkd"/>
+                <constraint firstItem="LO8-Hg-TJu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bF2-2P-s6J"/>
                 <constraint firstItem="vc4-Ml-jwX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eEK-LL-iAn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LO8-Hg-TJu" secondAttribute="trailing" id="eOP-Tt-1cP"/>
                 <constraint firstItem="SYJ-1W-CK7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="foc-60-AtA"/>
                 <constraint firstItem="ZdO-PF-lQ2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sww-29-urc"/>
                 <constraint firstItem="wHY-8d-fjC" firstAttribute="trailing" secondItem="FG0-Oe-y9b" secondAttribute="trailing" id="w1A-ca-NwY"/>

@@ -100,14 +100,9 @@ class DBManager: NSObject {
     class func cleanUpUserDefaults() {
         DispatchQueue.main.async {
             let defaults = UserDefaults.standard
-            defaults.removeObject(forKey: Constants.UserDefultKey.kUserId)
-            defaults.removeObject(forKey: Constants.UserDefultKey.kIsEmailVerified)
             defaults.removeObject(forKey: Constants.UserDefultKey.kAccessToken)
             defaults.removeObject(forKey: Constants.UserDefultKey.kRefreshToken)
-            defaults.removeObject(forKey: Constants.UserDefultKey.kUserType)
             defaults.removeObject(forKey: Constants.UserDefultKey.kAccessTokenExpire)
-            defaults.removeObject(forKey: "transactionIdentifier")
-            timerNotification = nil
         }
        
     }

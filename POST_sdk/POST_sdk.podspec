@@ -15,5 +15,10 @@ post sdk for easy onbaording!
   s.ios.deployment_target = '13.0'
   s.source_files = 'POST_sdk/POST_sdk/POST/*.{swift}'
   s.resources = 'POST_sdk/POST_sdk/POST/**/*.{storyboard,xib,xcassets,json,png,ttf}'
+  s.dependency 'Alamofire'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'SwiftyJSON'
+  s.dependency 'SVProgressHUD'
+  s.dependency 'Kingfisher'
 
 end

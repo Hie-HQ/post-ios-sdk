@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//import Alamofire
+import Alamofire
 import SwiftUI
 
 typealias OptionalDictionary = [String: Any]?
@@ -35,14 +35,13 @@ extension Sequence where Iterator.Element == Keys {
 
 
 enum APIEndPoints {
-    
 
     case authenticate_sdk_user(clientId: String, clientSecret: String)
     case generate_otp(countryCode: String, mobile: String)
     case authenticate(countryCode: String, mobile: String, otp: String)
     case refresh_token(refreshToken: String)
-    case get_user_profile(id : Int)
-    case update_user_profile(id : Int)
+    case get_user_profile(id : String)
+    case update_user_profile(id : String, step : String, payload: [String:String])
 
 }
 
@@ -63,7 +62,7 @@ extension APIEndPoints: Router {
        
         case let .get_user_profile(id): return "\(APIConstants.get_user_profile)/\(id)"
             
-        case let .update_user_profile(id): return "\(APIConstants.update_user_profile)/\(id)"
+        case let .update_user_profile(id, step, payload): return "\(APIConstants.update_user_profile)/\(id)"
 
        
         }
@@ -109,6 +108,12 @@ extension APIEndPoints: Router {
             
         case let .refresh_token(refreshToken):
             return Parameters.refresh_token.map(values: [refreshToken])
+            
+        case let .update_user_profile(id, step, payload):
+            return Parameters.update_user_profile.map(values: [step, payload])
+            
+            
+
             
 
         default:

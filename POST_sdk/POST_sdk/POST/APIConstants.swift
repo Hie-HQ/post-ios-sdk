@@ -26,6 +26,7 @@ enum Parameters {
     static let generate_otp: [Keys] = [.countryCode, .mobile]
     static let authenticate: [Keys] = [.countryCode, .mobile, .otp]
     static let refresh_token: [Keys] = [.refreshToken]
+    static let update_user_profile: [Keys] = [.step, .payload]
 
 }
 
@@ -63,4 +64,16 @@ enum Keys: String {
     case mobile
     case otp
     case refreshToken
+    case status_code = "statusCode"
+    case step
+    case payload
+
+}
+
+enum FormFieldType: String {
+    case text
+    case date
+    case select
+    case number
+    case textarea
 }

@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'POST_sdk' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for POST_sdk
+  
+  pod 'IQKeyboardManager'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'SVProgressHUD'
+  pod 'Kingfisher'
+
+  target 'POST_sdkTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'POST_sdkUITests' do
+    # Pods for testing
+  end
+
+end
